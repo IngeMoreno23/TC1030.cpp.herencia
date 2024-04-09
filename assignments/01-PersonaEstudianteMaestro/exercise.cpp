@@ -1,4 +1,5 @@
 #include "Estudiante.hpp"
+#include "Maestro.hpp"
 
 #include <iostream>
 
@@ -18,6 +19,12 @@ int main()
 
   std::cout << "Los datos de la persona 2 son:\n";
   std::cout << "Nombre: " << pedro.getNombre() << " Edad: " << pedro.getEdad() << "\n";
+
+  
+  Maestro maria{"Maria", 30, "Computacion"}, luis{};
+
+  std::cout << "Los datos del maestro 1 son:\n";
+  maria.muestraDatos();
 
   return 0;
 }
